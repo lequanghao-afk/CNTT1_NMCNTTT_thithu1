@@ -112,12 +112,12 @@ Get-Content logs/loi_500.txt -TotalCount 2
 ### b) Lệnh đếm số dòng status=404 và kết quả
 
 ```shell
-# Ghi lệnh vào đây (xoá dòng này)
+(Get-Content logs/access.log | Select-String "status=404").Count
 
 ```
 
 ```text
-(Dán kết quả đếm vào đây – xoá dòng này)
+5
 
 ```
 
